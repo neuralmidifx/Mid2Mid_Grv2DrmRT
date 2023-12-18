@@ -6,14 +6,19 @@
             "tabList": [
                 {
                     "name": "RandomGeneration",
-                    "sliders": [],
+                    "sliders": [
+                        {
+                            "label": "Density",
+                            "min": 0.0,
+                            "max": 1.0,
+                            "default": 0.5,
+                            "topLeftCorner": "Fi",
+                            "bottomRightCorner": "Tm",
+                            "horizontal": true
+                        }
+                    ],
                     "rotaries": [],
-                    "buttons": [{
-                        "label": "Randomize",
-                        "isToggle": false,
-                        "topLeftCorner": "Kh",
-                        "bottomRightCorner": "Pm"
-                    }],
+                    "buttons": [],
                     "MidiDisplays": []
                 },
                 {
@@ -101,7 +106,7 @@
 
         "MidiInVisualizer": {
             "enable": true,
-            "allowToDragInMidi": true,
+            "allowToDragInMidi": false,
             "visualizeIncomingMidiFromHost": true,
             "deletePreviousIncomingMidiMessagesOnBackwardPlayhead": true,
             "deletePreviousIncomingMidiMessagesOnRestart": true
@@ -114,7 +119,7 @@
     },
 
     "StandaloneTransportPanel": {
-        "enable": true
+        "enable": false
     },
 
     "VirtualMidiOut": {
@@ -132,7 +137,7 @@
         "FilterCCEvents_FLAG": false
     },
 
-    "deploy_method_min_wait_time_between_iterations": 0.5,
+    "deploy_method_min_wait_time_between_iterations": 0.0,
 
     "debugging_settings": {
         "DeploymentThread": {
