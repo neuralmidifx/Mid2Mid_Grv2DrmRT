@@ -16,10 +16,9 @@ juce_add_plugin("${BaseTargetName}"
         EDITOR_WANTS_KEYBOARD_FOCUS FALSE
         COPY_PLUGIN_AFTER_BUILD TRUE                 # copies the plugin to user plugins folder so as to easily load in DAW
         PLUGIN_MANUFACTURER_CODE Juce                #
-        PLUGIN_CODE aaac                             # MUST BE UNIQUE!! If similar to other plugins, conflicts will occur
+        PLUGIN_CODE aaad                             # MUST BE UNIQUE!! If similar to other plugins, conflicts will occur
         FORMATS AU VST3 Standalone
         PRODUCT_NAME "Demo4")           # Replace with your plugin title
-
 
 
 
